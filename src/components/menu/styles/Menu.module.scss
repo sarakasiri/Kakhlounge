@@ -1,0 +1,25 @@
+.menuGrid {
+    margin-bottom: 1rem !important;
+}
+
+.menuItems {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    flex: 1;
+}
+
+.itemsDesc {
+    display: flex !important;
+}
+
+.menuItemDash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem !important;
+    height: 0.01rem;
+    background-color: #d9e4ec !important;
+    margin-top: 1rem;
+    border: solid 1px #d9e4ec !important;
+}

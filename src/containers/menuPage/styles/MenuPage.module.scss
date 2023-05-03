@@ -1,0 +1,7 @@
+.menuBackground {
+    display: flex !important;
+    margin-top: auto !important;
+    height: 0 !important;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}

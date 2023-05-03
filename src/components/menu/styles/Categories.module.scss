@@ -1,0 +1,24 @@
+// .categoryButtons {
+//     display: flex !important;
+//     justify-content: center !important;
+//     align-items: center !important;
+//     bottom: 0 !important;
+// }
+
+
+.proSidebar {
+    position: fixed !important;
+    max-height: 38rem !important;
+    top: calc(50% - 38rem / 2);
+}
+
+.sidebar {
+    margin-right: 0 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
