@@ -5,6 +5,9 @@ import classes from './styles/MenuPage.module.scss';
 import Categories from '../../components/menu/Categories';
 import Menu from '../../components/menu/Menu';
 import items from '../../components/menu/data';
+import Example from '../../components/slider/Slider';
+
+import { Grid } from '@mui/material';
 
 const allCategories = ['all', ...new Set(items.map(item => item.category))];
 
@@ -27,12 +30,21 @@ const MenuPage = () => {
     }
 
     return (
-        <div className={classes.menuPageBackground}>
-            <Categories categories={categories} filterItems={filterItems} handleBackground={handleBackground} />
+        <div className={classes.menuContainer}>
+            <Grid container xs={12} className={classes.menuCarousel}>
+                <Grid item xs={12} >
+                    <Example />
+                </Grid>
+            </Grid>
+            <Grid container xs={12} className={classes.menuBackground}>
+                <Grid item xs={10} className={classes.menuItems}>
+                    <Menu className={classes.menuItems} items={menuItems} />
+                </Grid>
+                <Grid item xs={2}>
+                    <Categories categories={categories} filterItems={filterItems} handleBackground={handleBackground} />
+                </Grid>
 
-            {/* <div className={classes.menuBackground}> */}
-            <Menu items={menuItems} />
-            {/* </div> */}
+            </Grid>
         </div>
     );
 }

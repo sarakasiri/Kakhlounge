@@ -17,9 +17,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem !important;
-    height: 0.01rem;
-    background-color: #d9e4ec !important;
-    margin-top: 1rem;
-    border: solid 1px #d9e4ec !important;
+    width: 90% !important;
+    margin-top: 1rem !important;
+    border-image: linear-gradient(90deg, rgba(121, 121, 121, 0.5663515406162465) 0%, rgba(32, 32, 32, 1) 50%, rgba(121, 121, 121, 0.583158263305322) 100%) 30;
+    border-width: 0.5px;
+    border-style: solid;
+
+}
+
+.background {
+    margin-top: 4rem !important;
+
+}
+
+
+.background {
+    margin-right: 0 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.background ::-webkit-scrollbar {
+    display: none;
+}
+
+.removeButton {
+    color: rgb(0, 0, 0);
+}
+
+.addButton {
+    color: rgb(0, 0, 0);
 }

@@ -39,7 +39,7 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                         "& .pro-inner-item": {
                             paddingTop: "10px !important",
                             paddingRight: "10px !important",
-                            paddingLeft: "10px !important"
+                            paddingLeft: "13px !important"
                         },
                         "& .pro-inner-item:hover": {
                             color: "#868dfb !important",
