@@ -60,23 +60,23 @@ const Menu = ({ items }) => {
 
                                         <span>{menuItem.desc}</span>
                                     </div>
-                                    <div>
+                                    {/* <div>
 
-                                        {/* {cart.some((p) => p.id === items.id) ? ( */}
+                                       {cart.some((p) => p.id === items.id) ? (
                                         <Button
 
                                         // onClick={removeFromCart}
                                         >
                                             < RemoveCircleOutlineIcon className={classes.removeButton} />
                                         </Button>
-                                        {/* ) : ( */}
+                                         ) : ( 
                                         <Button
                                         // onClick={addToCart}
                                         >
                                             <ControlPointIcon className={classes.addButton} />
                                         </Button>
-                                        {/* )} */}
-                                    </div>
+                                         )} 
+                                    </div> */}
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 

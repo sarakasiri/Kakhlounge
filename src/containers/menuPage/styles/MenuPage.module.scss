@@ -1,14 +1,18 @@
 .menuBackground {
     background-color: rgb(145, 145, 145);
-    min-height: 40rem !important;
+    height: 85.7vh !important;
     border-radius: 5rem 5rem 0 0;
     margin-top: 6rem !important;
     z-index: 10;
 
-    // margin-right: 0 !important;
-    // overflow-y: scroll;
-    // -ms-overflow-style: none !important;
-    // scrollbar-width: none !important;
+    margin-right: 0 !important;
+    overflow-y: scroll !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.menuBackground::-webkit-scrollbar {
+    display: none;
 }
 
 .menuCarousel {
