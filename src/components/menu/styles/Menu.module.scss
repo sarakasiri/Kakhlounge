@@ -7,10 +7,18 @@
     flex-direction: row !important;
     justify-content: space-between !important;
     flex: 1;
+    font-family: 'Lalezar', cursive !important;
+    font-size: 1.15rem !important;
+
+
 }
 
 .itemsDesc {
     display: flex !important;
+    direction: rtl !important;
+    font-family: 'Scheherazade', serif !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
 }
 
 .menuItemDash {

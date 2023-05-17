@@ -12,14 +12,19 @@ import "react-pro-sidebar/dist/css/styles.css";
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
+import salad from "../../assets/salad.png";
+import pizza from "../../assets/pizza.png";
+import burger from "../../assets/burger.png";
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Categories = ({ categories, filterItems, handleBackground }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
     const [selected, setSelected] = useState("Dashboard");
     const [currentCategory, setCurrentCategory] = useState(0);
 
-    const handleCategoryClick = (categoryIndex, category) => {
-        filterItems(category);
+    const handleCategoryClick = (categoryIndex, category_name) => {
+        filterItems(category_name);
         setCurrentCategory(categoryIndex);
         setIsCollapsed(true)
     };
@@ -62,20 +67,24 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                                 icon={<MenuOutlinedIcon />}
 
                             />
-                            {categories?.map((category, index) => {
+                            {categories?.map((category_name, index) => {
                                 return (
                                     <>
-
                                         <Box >
                                             <MenuItem
-                                                // active={selected === title}
-                                                icon={<LunchDiningIcon />}
-                                                onClick={() => handleCategoryClick(index, category)}
+                                                icon={
+                                                    category_name == "پیتزا" ? (
+                                                        <LazyLoadImage src={pizza} style={{ width: "2rem" }} />
+                                                    ) : category_name == "سالاد و پیش غذا" ? (
+                                                        <LazyLoadImage src={salad} style={{ width: "2rem" }} />
+                                                    ) : category_name == "برگر" ? (
+                                                        <LazyLoadImage src={burger} style={{ width: "2rem" }} />
+                                                    ) : null}
+                                                onClick={() => handleCategoryClick(index, category_name)}
                                             >
-                                                <Typography>{category}</Typography>
+                                                <Typography className={classes.categoriesName}>{category_name}</Typography>
                                             </MenuItem>
                                         </Box>
-
                                     </>
                                 )
                             })}

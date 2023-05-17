@@ -1,8 +1,8 @@
 .menuBackground {
     background-color: rgb(145, 145, 145);
-    height: 85.7vh !important;
+    max-height: 100vh !important;
     border-radius: 5rem 5rem 0 0;
-    margin-top: 6rem !important;
+    margin-top: 8rem !important;
     z-index: 10;
 
     margin-right: 0 !important;
@@ -19,10 +19,11 @@
     position: absolute;
     z-index: -1;
     padding-bottom: 10rem !important;
-    margin-top: -5rem !important;
+    margin-top: -8rem !important;
 }
 
 .menuItems {
+    direction: rtl !important;
     margin-right: 0 !important;
     overflow-y: scroll;
     -ms-overflow-style: none !important;

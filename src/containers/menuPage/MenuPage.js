@@ -9,7 +9,7 @@ import Example from '../../components/slider/Slider';
 
 import { Grid } from '@mui/material';
 
-const allCategories = ['all', ...new Set(items.map(item => item.category))];
+const allCategories = [...new Set(items.map(item => item.category_name))];
 
 const MenuPage = () => {
     const [categories, setCategories] = useState(allCategories);
@@ -17,11 +17,11 @@ const MenuPage = () => {
     const [menuBackground, setMenuBackground] = useState(true);
 
     const filterItems = category => {
-        if (category == 'all') {
-            setMenuItems(items);
-            return;
-        }
-        const newItems = items.filter((item) => item.category === category);
+        // if (category == 'all') {
+        //     setMenuItems(items);
+        //     return;
+        // }
+        const newItems = items.filter((item) => item.category_name === category);
         setMenuItems(newItems);
     };
 

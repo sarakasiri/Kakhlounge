@@ -38,28 +38,24 @@ const Menu = ({ items }) => {
     return (
         <Container>
             <div className={classes.background}>
-                {items?.map((menuItem) => {
+                {items?.map((menuItems) => {
                     return (
                         <div className={classes.menuItemsContainer}>
                             <Grid className={classes.menuGrid}>
                                 <div className={classes.menuItems}>
                                     <div>
-                                        <p>
-                                            {menuItem.title}
+                                        <p style={{ fontSize: "1.3rem !important" }}>
+                                            {menuItems.title}
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            {menuItem.price}
+                                            {menuItems.price}
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className={classes.menuItems}>
-                                    <div className={classes.itemsDesc}>
-
-                                        <span>{menuItem.desc}</span>
-                                    </div>
                                     {/* <div>
 
                                        {cart.some((p) => p.id === items.id) ? (
@@ -77,6 +73,9 @@ const Menu = ({ items }) => {
                                         </Button>
                                          )} 
                                     </div> */}
+                                    <div className={classes.itemsDesc}>
+                                        <span >{menuItems.material}</span>
+                                    </div>
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 
@@ -86,8 +85,8 @@ const Menu = ({ items }) => {
                         </div>
                     )
                 })}
-            </div>
-        </Container>
+            </div >
+        </Container >
     );
 };
 
