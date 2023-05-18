@@ -14,6 +14,13 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 import salad from "../../assets/salad.png";
 import pizza from "../../assets/pizza.png";
+import kebab from "../../assets/kebab.png";
+import steak from "../../assets/steak.png";
+import sushi from "../../assets/sushi.png";
+import melal from "../../assets/melal.png";
+import pasta from "../../assets/pasta.png";
+import stew from "../../assets/stew.png";
+import rice from "../../assets/rice.png";
 import burger from "../../assets/burger.png";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -79,6 +86,20 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                                                         <LazyLoadImage src={salad} style={{ width: "2rem" }} />
                                                     ) : category_name == "برگر" ? (
                                                         <LazyLoadImage src={burger} style={{ width: "2rem" }} />
+                                                    ) : category_name == "استیک" ? (
+                                                        <LazyLoadImage src={steak} style={{ width: "2rem" }} />
+                                                    ) : category_name == "کباب" ? (
+                                                        <LazyLoadImage src={kebab} style={{ width: "2rem" }} />
+                                                    ) : category_name == "سوشی" ? (
+                                                        <LazyLoadImage src={sushi} style={{ width: "2rem" }} />
+                                                    ) : category_name == "ملل" ? (
+                                                        <LazyLoadImage src={melal} style={{ width: "2rem" }} />
+                                                    ) : category_name == "پاستا" ? (
+                                                        <LazyLoadImage src={pasta} style={{ width: "2rem" }} />
+                                                    ) : category_name == "خورش و خوراک" ? (
+                                                        <LazyLoadImage src={stew} style={{ width: "2rem" }} />
+                                                    ) : category_name == "پلوها" ? (
+                                                        <LazyLoadImage src={rice} style={{ width: "2rem" }} />
                                                     ) : null}
                                                 onClick={() => handleCategoryClick(index, category_name)}
                                             >

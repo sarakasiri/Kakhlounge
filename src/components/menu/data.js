@@ -30,7 +30,7 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
-        title: " بریدیت ",
+        title: "بریدیت",
         price: 240000,
         material: "گوشت اسلایس گوسفند / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / فلفل هالوپینو / سس کچاپ / سس سیر"
     },
@@ -41,7 +41,7 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
-        title: " استافد کراست",
+        title: "استافد کراست",
         price: 240000,
         material: "ژامبون گوشت و مرغ / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / سس کچاپ / سس سیر"
     },
@@ -52,7 +52,7 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
-        title: " تانگیو",
+        title: "تانگیو",
         price: 240000,
         material: "زبان گوساله اسلایس / قارچ / فلفل دلمه ای رنگی / پیاز قرمز / سس کچاپ / سس سیر"
     },
@@ -360,31 +360,31 @@ const items = [
 
     //category : crispy
     {
-        category_name: "سوخاری",
+        category_name: "ملل",
         title: "تمپورا ماهی",
         price: 240000,
         material: "200 گرم ماهی شیر طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
     },
     {
-        category_name: "سوخاری",
+        category_name: "ملل",
         title: "تمپورا میگو",
         price: 240000,
         material: "150 گرم میگو طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
     },
     {
-        category_name: "سوخاری",
+        category_name: "ملل",
         title: "اسپرینگ رول",
         price: 240000,
         material: "گوشت طعم دار شده بهمراه پنیر موزارلا پیچیده شده در نان یوفکا / سس ... چیلی / سیب زمینی سرخ شده"
     },
     {
-        category_name: "سوخاری",
+        category_name: "ملل",
         title: "چیکن وینگز",
         price: 240000,
         material: "بال مرغ سوخاری / سیب زمینی سرخ شده / سس پارسلی / سس باربیکیو"
     },
     {
-        category_name: "سوخاری",
+        category_name: "ملل",
         title: "چیکن بالز",
         price: 240000,
         material: "توپک مرغ و پنیر / سس پارسلی / سس کچاپ / سیب زمینی سرخ شده"
@@ -393,48 +393,48 @@ const items = [
 
     //category : stew and food
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "چلو خورش طهرونی",
         price: 240000,
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "چلو خورش فسنحان با گوشت",
         price: 240000,
         material: "250 گرم خورش فسنجان بهمراه 200 گرم گوشت گوساله"
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "چلو خورش فسنحان با مرغ",
         price: 240000,
         material: "250 گرم خورش فسنجان بهمراه یک عدد جوجه مرغ 31 روزه"
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "ماهی قزل آلا به سبک کاخ لانژ",
         price: 240000,
         material: "400 گرم ماهی قزل آلا بهمراه سس فسنجان"
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "ماهیچه گوسفندی",
         price: 240000,
         material: "500 گرم ماهیچه گوسفندی / سس پیاز / سس .."
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "گردن گوسفندی",
         price: 240000,
         material: "500 گرم گردن گوسفندی / سس پیاز سس ..."
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "خوراک زبان",
         price: 240000,
         material: "150 گرم زبان گوساله بهمراه سس قارچ"
     },
     {
-        category_name: "خورش و خوراک ",
+        category_name: "خورش و خوراک",
         title: "اکبر جوجه",
         price: 240000,
         material: "600 گرم جوجه مرغ 21 روزه /سس انار"

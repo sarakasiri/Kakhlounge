@@ -5,6 +5,10 @@ import classes from "./styles/Menu.module.scss";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
+import divider from "../../assets/divider.png";
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { add, remove } from "../../redux/slices/CartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
@@ -78,8 +82,8 @@ const Menu = ({ items }) => {
                                     </div>
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-
-                                    <div className={classes.menuItemDash}></div>
+                                    <LazyLoadImage src={divider} style={{ width: '100%', paddingTop: '1rem' }} />
+                                    {/* <div className={classes.menuItemDash}></div> */}
                                 </div>
                             </Grid>
                         </div>
