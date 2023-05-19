@@ -48,15 +48,15 @@ const Menu = ({ items }) => {
                             <Grid className={classes.menuGrid}>
                                 <div className={classes.menuItems}>
                                     <div>
-                                        <p style={{ fontSize: "1.3rem !important" }}>
+                                        <p style={{ fontSize: "1.3rem !important", color: "#d4c9ab" }}>
                                             {menuItems.title}
                                         </p>
                                     </div>
-                                    <div>
-                                        <p>
+                                    {/* <div>
+                                        <p style={{ color: "white" }}>
                                             {menuItems.price}
                                         </p>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className={classes.menuItems}>
@@ -78,12 +78,12 @@ const Menu = ({ items }) => {
                                          )} 
                                     </div> */}
                                     <div className={classes.itemsDesc}>
-                                        <span >{menuItems.material}</span>
+                                        <span style={{ color: "#d4cbb4" }}>{menuItems.material}</span>
                                     </div>
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                    <LazyLoadImage src={divider} style={{ width: '100%', paddingTop: '1rem' }} />
-                                    {/* <div className={classes.menuItemDash}></div> */}
+                                    {/* <LazyLoadImage src={divider} style={{ width: '100%', paddingTop: '1rem' }} /> */}
+                                    <div className={classes.menuItemDash}></div>
                                 </div>
                             </Grid>
                         </div>

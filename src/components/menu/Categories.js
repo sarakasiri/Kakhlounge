@@ -42,7 +42,7 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                 < Box
                     sx={{
                         "& .pro-sidebar-inner": {
-                            background: "black !important",
+                            background: "#23291b !important",
                             borderRadius: "2.5rem 0 0 2.5rem",
                         },
                         "& .pro-icon-wrapper": {

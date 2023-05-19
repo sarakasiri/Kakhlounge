@@ -8,6 +8,9 @@ import items from '../../components/menu/data';
 import Example from '../../components/slider/Slider';
 
 import { Grid } from '@mui/material';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import logo from "../../assets/logo.png";
 
 const allCategories = [...new Set(items.map(item => item.category_name))];
 
@@ -38,6 +41,7 @@ const MenuPage = () => {
             </Grid>
             <Grid container xs={12} className={classes.menuBackground}>
                 <Grid item xs={10} className={classes.menuItems}>
+                    <div className={classes.backgroundCover}></div>
                     <Menu className={classes.menuItems} items={menuItems} />
                 </Grid>
                 <Grid item xs={2}>
