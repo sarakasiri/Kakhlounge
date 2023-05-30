@@ -5,18 +5,9 @@ import classes from "./styles/Menu.module.scss";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-import divider from "../../assets/divider.png";
-
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import { add, remove } from "../../redux/slices/CartSlice";
-import { useSelector, useDispatch } from "react-redux";
-import { useSnackbar } from "notistack";
-
-import ControlPointIcon from '@mui/icons-material/ControlPoint';
-import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import { Button } from "@mui/material";
-
+import sold_out from '../../assets/sold_out.png';
 
 const Menu = ({ items }) => {
     // const { cart } = useSelector((state) => state);
@@ -46,17 +37,20 @@ const Menu = ({ items }) => {
                     return (
                         <div className={classes.menuItemsContainer}>
                             <Grid className={classes.menuGrid}>
+                                {menuItems?.sold_out &&
+                                    <LazyLoadImage src={sold_out} className={classes.sold_out} />
+                                }
                                 <div className={classes.menuItems}>
                                     <div>
                                         <p style={{ fontSize: "1.3rem !important", color: "#d4c9ab" }}>
                                             {menuItems.title}
                                         </p>
                                     </div>
-                                    {/* <div>
+                                    <div>
                                         <p style={{ color: "white" }}>
                                             {menuItems.price}
                                         </p>
-                                    </div> */}
+                                    </div>
                                 </div>
 
                                 <div className={classes.menuItems}>

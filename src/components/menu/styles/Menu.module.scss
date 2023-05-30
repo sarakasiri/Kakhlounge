@@ -1,5 +1,13 @@
 .menuGrid {
     margin-bottom: 1rem !important;
+    position: relative !important;
+}
+
+.sold_out{
+    position: absolute !important;
+    height: 100%;
+    top: -10px;
+    filter: opacity(0.7);
 }
 
 .menuItems {
@@ -8,16 +16,15 @@
     justify-content: space-between !important;
     flex: 1;
     font-family: 'Lalezar', cursive !important;
-    font-size: 1.15rem !important;
-
-
+    font-size: 1.2rem !important;
 }
 
 .itemsDesc {
     display: flex !important;
     direction: rtl !important;
-    font-family: 'Scheherazade', serif !important;
-    font-size: 0.9rem !important;
+    font-family: IRANSans_Normal;
+    // font-family: 'Scheherazade', serif !important;
+    font-size: 0.6rem !important;
     font-weight: 600 !important;
 }
 

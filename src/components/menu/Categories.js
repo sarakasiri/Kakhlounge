@@ -22,6 +22,14 @@ import pasta from "../../assets/pasta.png";
 import stew from "../../assets/stew.png";
 import rice from "../../assets/rice.png";
 import burger from "../../assets/burger.png";
+import hot_drink from "../../assets/hot_drink.png";
+import cold_drink from "../../assets/cold_drink.png";
+import shake from "../../assets/shake.png";
+import punch from "../../assets/punch.png";
+import smoothiea from "../../assets/smoothiea.png";
+import cake from "../../assets/cake.png";
+import cafee from "../../assets/cafee.png";
+import coaktil from "../../assets/coaktil.png";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -100,6 +108,22 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                                                         <LazyLoadImage src={stew} style={{ width: "2rem" }} />
                                                     ) : category_name == "پلوها" ? (
                                                         <LazyLoadImage src={rice} style={{ width: "2rem" }} />
+                                                    ) : category_name == "نوشیدنی گرم" ? (
+                                                        <LazyLoadImage src={hot_drink} style={{ width: "2rem" }} />
+                                                    ) : category_name == "نوشیدنی سرد" ? (
+                                                        <LazyLoadImage src={cold_drink} style={{ width: "2rem" }} />
+                                                    ) : category_name == "شیک" ? (
+                                                        <LazyLoadImage src={shake} style={{ width: "2rem" }} />
+                                                    ) : category_name == "پانچ" ? (
+                                                        <LazyLoadImage src={punch} style={{ width: "2rem" }} />
+                                                    ) : category_name == "اسموتی" ? (
+                                                        <LazyLoadImage src={smoothiea} style={{ width: "2rem" }} />
+                                                    ) : category_name == "کیک و دسر" ? (
+                                                        <LazyLoadImage src={cake} style={{ width: "2rem" }} />
+                                                    ) : category_name == "نوشیدنی گرم اسپرسو" ? (
+                                                        <LazyLoadImage src={cafee} style={{ width: "2rem" }} />
+                                                    ) : category_name == "ماکتیل" ? (
+                                                        <LazyLoadImage src={coaktil} style={{ width: "2rem" }} />
                                                     ) : null}
                                                 onClick={() => handleCategoryClick(index, category_name)}
                                             >
