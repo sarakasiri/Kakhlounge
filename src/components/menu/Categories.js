@@ -73,8 +73,8 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                         className={classes.proSidebar}
                         collapsed={isCollapsed}
                         rtl={true}
-                        width={"10rem"}
-                        collapsedWidth={"3.5rem"}
+                        width={"12rem"}
+                        collapsedWidth={"3.8rem"}
                     >
                         <Menu iconShape="square" className={classes.sidebar}>
                             <MenuItem

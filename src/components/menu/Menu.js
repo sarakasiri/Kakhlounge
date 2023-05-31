@@ -47,7 +47,7 @@ const Menu = ({ items }) => {
                                         </p>
                                     </div>
                                     <div>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{ fontSize: "1.3rem !important", color: "#d4c9ab" }}>
                                             {menuItems.price}
                                         </p>
                                     </div>

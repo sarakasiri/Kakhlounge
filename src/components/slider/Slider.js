@@ -62,7 +62,7 @@ function Example(props) {
         <Carousel navButtonsAlwaysInvisible autoPlay >
             {
                 items.map((item, i) => (
-                    <Paper key={i} style={{ height: "10rem" }}>
+                    <Paper key={i} style={{ height: "10.6rem" }}>
                         <LazyLoadImage style={{ width: "100%" }} src={item.image} />
                     </Paper>
                 ))
