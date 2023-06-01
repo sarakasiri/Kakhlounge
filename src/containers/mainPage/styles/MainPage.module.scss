@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+}
+
+.mainDivShadowContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    top: calc(50% - 15rem / 2);
+    height: 15rem !important;
+    width: 20rem;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.7;
+    border-radius: 0.3rem !important;
+}
+
+.menuButton {
+    color: #f5d256 !important;
+    font-family: IRANSans_Normal !important;
+    top: calc(50% - 2.5rem / 2);
+    border: 0.1rem solid rgb(80, 71, 21) !important;
+    height: 2.5rem !important;
+    width: 9rem !important;
+    margin: 0 0.5rem 1rem 0.5rem !important;
+}
+
+.mainPageNav {
+    width: 100% !important;
+    height: 3.5rem;
+    background-color: black;
+    position: absolute;
+    z-index: 9;
+    opacity: 0.9;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+
+.mainPagetext {
+    margin-top: 2rem !important;
+    font-family: IRANSans_Normal !important;
+    font-size: 0.8rem !important;
+}
+
+.textIcon {
+    font-size: 0.8rem !important;
+    padding-left: 0.3rem;
+}

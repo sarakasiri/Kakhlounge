@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 
 import './styles/App.css'
 
-// import AppRouter from '../routes/router/AppRouter ;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import MainPage from '../containers/mainPage/MainPage';
 import MenuPage from '../containers/menuPage/MenuPage';
+import RestaurantInfo from '../containers/restaurantInfo/RestaurantInfo';
 
 const App = () => {
 
     return (
         <div className="App">
-            <MenuPage />
-            {/* <AppRouter /> */}
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/menu" element={<MenuPage />} />
+                <Route path="/restaurant-info" element={<RestaurantInfo />} />
+            </Routes>
         </div>
     );
 }
