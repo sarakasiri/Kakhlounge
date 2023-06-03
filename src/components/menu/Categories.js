@@ -30,6 +30,8 @@ import smoothiea from "../../assets/smoothiea.png";
 import cake from "../../assets/cake.png";
 import cafee from "../../assets/cafee.png";
 import coaktil from "../../assets/coaktil.png";
+import nokah from "../../assets/nokah.png";
+import fruit from "../../assets/fruit-juices.png";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -99,9 +101,9 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                                                     ) : category_name == "کباب" ? (
                                                         <LazyLoadImage src={kebab} style={{ width: "2rem" }} />
                                                     ) : category_name == "سوشی" ? (
-                                                        <LazyLoadImage src={sushi} style={{ width: "2rem" }} />
-                                                    ) : category_name == "ملل" ? (
                                                         <LazyLoadImage src={melal} style={{ width: "2rem" }} />
+                                                    ) : category_name == "ملل" ? (
+                                                        <LazyLoadImage src={sushi} style={{ width: "2rem" }} />
                                                     ) : category_name == "پاستا" ? (
                                                         <LazyLoadImage src={pasta} style={{ width: "2rem" }} />
                                                     ) : category_name == "خورش و خوراک" ? (
@@ -118,6 +120,10 @@ const Categories = ({ categories, filterItems, handleBackground }) => {
                                                         <LazyLoadImage src={punch} style={{ width: "2rem" }} />
                                                     ) : category_name == "اسموتی" ? (
                                                         <LazyLoadImage src={smoothiea} style={{ width: "2rem" }} />
+                                                    ) : category_name == "قلیان" ? (
+                                                        <LazyLoadImage src={nokah} style={{ width: "2rem" }} />
+                                                    ) : category_name == "آبمیوه" ? (
+                                                        <LazyLoadImage src={fruit} style={{ width: "2rem" }} />
                                                     ) : category_name == "کیک و دسر" ? (
                                                         <LazyLoadImage src={cake} style={{ width: "2rem" }} />
                                                     ) : category_name == "نوشیدنی گرم اسپرسو" ? (

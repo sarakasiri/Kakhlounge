@@ -6,10 +6,9 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
-        title: "پیتزا کاخ لانژ",
-        price: "۳۴۵",
-        material: "خمیر ایتالیایی / سینه مرغ طمع دار / گوشت گوساله طمع دار / بیکن گوشت / قارچ / فلفل دلمه ای / زیتون / سس سیر / سس کچاپ"
-
+        title: "پپرونی تک نفره",
+        price: "۱۹۰",
+        material: "پپرونی / سس کچاپ / سس سیر"
     },
     {
         category_name: "پیتزا",
@@ -20,86 +19,8 @@ const items = [
         // ],
         title: "چیکن باربیکیو تک نفره",
         price: "۱۹۹",
-        material: "سینه مرغ طمع دار / فلفل دلمه ای رنگی /قارچ / زیتون / فلفل هالوپینو / سس کچاپ / سس سیر"
+        material: "سینه مرغ طمع دار / فلفل دلمه ای رنگی /قارچ / پیاز قرمز / زیتون / سس کچاپ / سس سیر"
 
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "چیکن باربیکیو دو نفره",
-        price: "۲۹۹",
-        material: "سینه مرغ طمع دار / فلفل دلمه ای رنگی /قارچ / زیتون / فلفل هالوپینو / سس کچاپ / سس سیر"
-
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "بریدیت تک نفره",
-        price: "۲۶۶",
-        material: "گوشت اسلایس گوسفند / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / فلفل هالوپینو / سس کچاپ / سس سیر"
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "بریدیت دو نفره",
-        price: "۴۲۰",
-        material: "گوشت اسلایس گوسفند / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / فلفل هالوپینو / سس کچاپ / سس سیر"
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "استافد کراست تک نفره",
-        price: "۲۳۵",
-        material: "ژامبون گوشت و مرغ / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / سس کچاپ / سس سیر"
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "استافد کراست دو نفره",
-        price: "۳۷۰",
-        material: "ژامبون گوشت و مرغ / فلفل دلمه ای رنگی / زیتون / قارچ / بیکن / سس کچاپ / سس سیر"
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "پپرونی تک نفره",
-        price: "۱۹۰",
-        material: "زبان گوساله اسلایس / قارچ / فلفل دلمه ای رنگی / پیاز قرمز / سس کچاپ / سس سیر"
-    },
-    {
-        category_name: "پیتزا",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "پپرونی دو نفره",
-        price: "۲۷۵",
-        material: "زبان گوساله اسلایس / قارچ / فلفل دلمه ای رنگی / پیاز قرمز / سس کچاپ / سس سیر"
     },
     {
         category_name: "پیتزا",
@@ -119,10 +40,90 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
+        title: "استافد کراست تک نفره",
+        price: "۲۳۵",
+        material: "ژامبون گوشت و مرغ / فلفل دلمه ای رنگی / زیتون / قارچ / ذرت / بیکن / سس کچاپ / سس سیر"
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "بریدیت تک نفره",
+        price: "۲۶۶",
+        material: "گوشت اسلایس گوساله / فلفل دلمه ای رنگی / زیتون / قارچ / دیپ سیر و خامه / فلفل هالوپینو / سس کچاپ / سس سیر"
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "پپرونی دو نفره",
+        price: "۲۷۵",
+        material: "پپرونی / سس کچاپ / سس سیر"
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "چیکن باربیکیو دو نفره",
+        price: "۲۹۹",
+        material: "سینه مرغ طمع دار / فلفل دلمه ای رنگی /قارچ / پیاز قرمز / زیتون / سس کچاپ / سس سیر"
+
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "پیتزا کاخ لانژ",
+        price: "۳۴۵",
+        material: "خمیر ایتالیایی / سینه مرغ طمع دار / گوشت گوساله طمع دار / بیکن گوشت / قارچ / دیپ سیر و خامه / فلفل دلمه ای / زیتون / سس سیر / سس کچاپ"
+
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
         title: "کواترو دو نفره",
         price: "۳۶۰",
         material: "سینه مرغ طمع دار / پپرونی / گوشت گوساله اسلایس / گوجه گیلاسی / بروکلی / قارچ / فلفل دلمه ای رنگی / زیتون / سس کچاپ / سس سیر"
     },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "استافد کراست دو نفره",
+        price: "۳۷۰",
+        material: "ژامبون گوشت و مرغ / فلفل دلمه ای رنگی / زیتون / قارچ / ذرت / بیکن / سس کچاپ / سس سیر"
+    },
+    {
+        category_name: "پیتزا",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "بریدیت دو نفره",
+        price: "۴۲۰",
+        material: "گوشت اسلایس گوساله / فلفل دلمه ای رنگی / زیتون / قارچ / دیپ سیر و خامه / فلفل هالوپینو / سس کچاپ / سس سیر"
+    },
+    
 
     //category : steak
     {
@@ -132,31 +133,9 @@ const items = [
         //     // slider_image1,
         //     // slider_image2
         // ],
-        title: "استیک فیله مینیون",
-        price: "۴۲۰",
-        material: "300 گرم فیله گوساله طعم دار / سس قارچ / سیب زمینی سرخ شده / سبزیجات طعم دار"
-    },
-    {
-        category_name: "استیک",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "استیک ریبای",
-        price: "۵۱۰",
-        material: "300گرم دنده گوساله طعم دار / سس قارچ / سیب زمینی سرخ شده / سس چیمچوری / سبزیجات طعم دار "
-    },
-    {
-        category_name: "استیک",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
         title: "چیکن استیک",
         price: "۲۹۰",
-        material: "300 گرم سینه مرغ طعم دار / سس قارچ / سیب زمینی سرخ شده / سبزیجات طعم دار"
+        material: "300 گرم سینه مرغ طعم دار / سس قارچ / سیب زمینی سرخ شده / سس دمی گلس / فراید رایس / سبزیجات طعم دار"
     },
     {
         category_name: "استیک",
@@ -167,224 +146,260 @@ const items = [
         // ],
         title: "میکس استیک",
         price: "۳۹۰",
-        material: "150 گرم سینه مرغ طعم دار / 100 گرم فیله گوساله طعم دار / سس قارچ / سیب زمینی سرخ شده /سبزیجات طعم دار"
+        material: "150 گرم سینه مرغ طعم دار / 100 گرم فیله گوساله طعم دار / سس قارچ / سیب زمینی سرخ شده / سس دمی گلس / فراید رایس / سبزیجات طعم دار"
+    },
+    {
+        category_name: "استیک",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "استیک فیله مینیون",
+        price: "۴۲۰",
+        material: "۲۰۰ گرم فیله گوساله طعم دار / سس قارچ / سس دمی گلس / فراید رایس / سیب زمینی سرخ شده / سبزیجات طعم دار"
+    },
+    {
+        category_name: "استیک",
+        // category_image: idk,
+        // slider: [
+        //     // slider_image1,
+        //     // slider_image2
+        // ],
+        title: "استیک ریبای",
+        price: "۵۱۰",
+        material: "۴۰۰ گرم دنده گوساله طعم دار / سس قارچ / سیب زمینی سرخ شده / سس دمی گلس / فراید رایس / سبزیجات طعم دار "
     },
 
 
     //category : kebabs
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "کباب لقمه",
-        price: "۱۹۵",
-        material: "مخلوط گوشت گوسند و گوساله 250 گرم",
-        sold_out: true,
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "جوجه زعفونی",
-        price: "۱۸۵",
-        material: "300 گرم ران چرخ شده مزه دار شده با چاشنی ماست و زعفران",
-        sold_out: true,
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "شیشلیگ",
-        price: "",
-        material: "450 گرم گوشت گوسفندی ",
-        sold_out: true,
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "شفتالیا",
-        price: "۲۱۰",
-        material: "250 گرم مخلوط گوشت گوسفند و گوساله پیچیده شده در لای چربی"
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "سوماکیا",
-        price: "۲۱۵",
-        material: "300 گرم ران مرغ مزه دار شده به همراه چاشنی سماق و انار",
-        sold_out: true,
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "بیتی کباب",
-        price: "۲۱۵",
-        material: "250 گرم مخلوط گوشت گوسفند و گوساله پیچیده شده در لای نان بهمراه سس گوجه و ماست",
-        sold_out: true,
-    },
-    {
-        category_name: "کباب",
-        // category_image: idk,
-        // slider: [
-        //     // slider_image1,
-        //     // slider_image2
-        // ],
-        title: "شش طاووق",
-        price: "۲۲۰",
-        material: "300 گرم ران مرغ مزه دار شده به همراه چاشنی ماست و زعفران و ادویه",
-        sold_out: true,
-    },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "کباب لقمه",
+    //     price: "۱۹۵",
+    //     material: "مخلوط گوشت گوسند و گوساله 250 گرم",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "جوجه زعفونی",
+    //     price: "۱۸۵",
+    //     material: "300 گرم ران چرخ شده مزه دار شده با چاشنی ماست و زعفران",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "شیشلیگ",
+    //     price: "",
+    //     material: "450 گرم گوشت گوسفندی ",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "شفتالیا",
+    //     price: "۲۱۰",
+    //     material: "250 گرم مخلوط گوشت گوسفند و گوساله پیچیده شده در لای چربی",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "سوماکیا",
+    //     price: "۲۱۵",
+    //     material: "300 گرم ران مرغ مزه دار شده به همراه چاشنی سماق و انار",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "بیتی کباب",
+    //     price: "۲۱۵",
+    //     material: "250 گرم مخلوط گوشت گوسفند و گوساله پیچیده شده در لای نان بهمراه سس گوجه و ماست",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "کباب",
+    //     // category_image: idk,
+    //     // slider: [
+    //     //     // slider_image1,
+    //     //     // slider_image2
+    //     // ],
+    //     title: "شش طاووق",
+    //     price: "۲۲۰",
+    //     material: "300 گرم ران مرغ مزه دار شده به همراه چاشنی ماست و زعفران و ادویه",
+    //     sold_out: true,
+    // },
 
     //category : salad
     {
         category_name: "سالاد و پیش غذا",
-        title: "سالاد چیکن فراید",
-        price: "۱۹۵",
-        material: "کاهو / سینه مرغ کریسپی / زیتوم سیاه / گوجه گیلاسی / پنیر پارمسان / بیبی کورن / خیار / سس سزار"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سالاد سزار گریل",
-        price: "۱۷۵",
-        material: "کاهو / ... / سینه مرغ گریل / پنیر پارمسان / سس سزار"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سالاد فتوش",
-        price: "۱۲۰",
-        material: "کاهو / تربچه / نعناء / گوجه / خیار / ... / انار / ... / سس انار و سماق"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سالاد استیک",
-        price: "۲۹۹",
-        material: "کاهو / پنیر کبابی / زیتون کبابی / توت فرنگی / پرتقال / فیله سوخاری گریل / سس بالزامیک"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سالاد گاردن",
-        price: "۱۵۰",
-        material: "کاهو / سیب سبز / پرتقال / کیوی / پنیر ... / بادام پرک / مغز کدو / زیتون کبابی / سس سبزیجات + سس زرشک"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
         title: "حمص",
         price: "۴۰",
-        material: "نخود بهمراه روغن زیتون و چاشنی های عربی"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "بورانی اسفناج",
-        price: "۳۵",
+        material: "حریره نخود بهمراه روغن زیتون و چاشنی های عربی"
     },
     {
         category_name: "سالاد و پیش غذا",
         title: "محمره",
         price: "",
-        material: "فلفل دلمه ای / گردو / روغن زیتون / چاشنی های عربی",
-        sold_out: true,
+        material: "حریره فلفل دلمه ای کبابی / گردو / روغن زیتون / چاشنی های عربی",
     },
     {
         category_name: "سالاد و پیش غذا",
-        title: "لبنه بلزعتر",
+        title: "لبنه بالزعتر",
         price: "۴۵",
         material: "پنیر خامه ای طعم دار با چاشنی های عربی"
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "ساالاد شیرازی",
-        price: "۳۸",
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "زیتون ساده با هسته",
-        price: "۳۵",
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "زیتون پرورده",
-        price: "۵۰",
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سیب تنوری",
-        price: "۱۲۰",
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "بیکن فرایز",
-        price: "۱۸۵",
-    },
-    {
-        category_name: "سالاد و پیش غذا",
-        title: "سیب آلفردو",
-        price: "۱۵۰",
     },
     {
         category_name: "سالاد و پیش غذا",
         title: "نان سیر",
         price: "۹۰",
     },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سالاد فتوش",
+        price: "۱۲۰",
+        material: "کاهو / تربچه / نعناء / گوجه / خیار / بادمجان چیپسی / انار / سس انار و سماق"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سیب تنوری",
+        price: "۱۲۰",
+        material: "۴۰۰ گرم سیب زمینی / سس کچاپ"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سالاد گاردن",
+        price: "۱۵۰",
+        material: "کاهو / سیب سبز / پرتقال / کیوی / پنیر / بادام پرک / مغز کدو / توت فرنگی / زیتون کبابی / سس سبزیجات + سس زرشک"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سیب آلفردو",
+        price: "۱۵۰",
+        material: "سیب زمینی / سس آلفردو‍"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سالاد سزار گریل",
+        price: "۱۹۰",
+        material: "کاهو / کروتان / سینه مرغ گریل / پنیر پارمسان / سس سزار"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "بیکن فرایز",
+        price: "۱۸۵",
+        material: "سیب زمینی / پنیر پیتزا / پنیر چدار / بیکن / قارچ / سس کچاپ / سس قارچ"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سالاد چیکن فراید",
+        price: "۱۹۵",
+        material: "کاهو / سینه مرغ کریسپی / زیتون سیاه / گوجه گیلاسی / پنیر پارمسان / بیبی کورن / خیار / سس سزار"
+    },
+    {
+        category_name: "سالاد و پیش غذا",
+        title: "سالاد استیک",
+        price: "۲۹۹",
+        material: "کاهو / پنیر کبابی / زیتون کبابی / توت فرنگی / پرتقال / فیله گوساله گریل / سس بالزامیک"
+    },
+    // {
+    //     category_name: "سالاد و پیش غذا",
+    //     title: "بورانی اسفناج",
+    //     price: "۳۵",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "سالاد و پیش غذا",
+    //     title: "ساالاد شیرازی",
+    //     price: "۳۸",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "سالاد و پیش غذا",
+    //     title: "زیتون ساده با هسته",
+    //     price: "۳۵",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "سالاد و پیش غذا",
+    //     title: "زیتون پرورده",
+    //     price: "۵۰",
+    //     sold_out: true,
+    // },
+
 
     //category : plows
-    {
-        category_name: "پلوها",
-        title: "ته چین مرغ",
-        price: "۲۸۰",
-        material: "... ته چین زعفرانی بهمراه تکه های بادمجان سرخ شده و 1 عدد جوجه مرغ 31 روزه / سس فسنجان + سس",
-        sold_out: true,
-    },
-    {
-        category_name: "پلوها",
-        title: "بقچه پلو با گوشت",
-        price: "۳۶۰",
-        material: "گرم چلو پیچیده شده در لای خمیر نان / گوشت گوساله / سس فسنجان / سس پیاز",
-        sold_out: true,
-    },
-    {
-        category_name: "پلوها",
-        title: "مچبوس اللهم",
-        price: "۲۹۰",
-        material: "400 گرم پلو عربی بهمراه گوشت گوساله / سس پیاز / سس ...",
-        sold_out: true,
-    },
-    {
-        category_name: "پلوها",
-        title: "مچبوس الدجاج",
-        price: "۲۷۵",
-        material: "400 گرم پلو عربی بهمراه 1 عدد جوجه مرغ 31 روزه / سس پیاز / سس ...",
-        sold_out: true,
-    },
-    {
-        category_name: "پلوها",
-        title: "چلو سفید",
-        price: "۵۵",
-        sold_out: true,
-    },
+    // {
+    //     category_name: "پلوها",
+    //     title: "ته چین مرغ",
+    //     price: "۲۸۰",
+    //     material: "... ته چین زعفرانی بهمراه تکه های بادمجان سرخ شده و 1 عدد جوجه مرغ 31 روزه / سس فسنجان + سس",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "پلوها",
+    //     title: "بقچه پلو با گوشت",
+    //     price: "۳۶۰",
+    //     material: "گرم چلو پیچیده شده در لای خمیر نان / گوشت گوساله / سس فسنجان / سس پیاز",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "پلوها",
+    //     title: "مچبوس اللهم",
+    //     price: "۲۹۰",
+    //     material: "400 گرم پلو عربی بهمراه گوشت گوساله / سس پیاز / سس ...",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "پلوها",
+    //     title: "مچبوس الدجاج",
+    //     price: "۲۷۵",
+    //     material: "400 گرم پلو عربی بهمراه 1 عدد جوجه مرغ 31 روزه / سس پیاز / سس ...",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "پلوها",
+    //     title: "چلو سفید",
+    //     price: "۵۵",
+    //     sold_out: true,
+    // },
 
 
     //category : burger
+    {
+        category_name: "برگر",
+        title: "زیتنگر برگر",
+        price: "۱۶۵",
+        material: "سینه مرغ سوخاری / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
+    },
     {
         category_name: "برگر",
         title: "بیف برگر",
@@ -393,15 +408,34 @@ const items = [
     },
     {
         category_name: "برگر",
-        title: "ریب برگر",
-        price: "۳۲۰",
-        material: "350 گرم گوشت دنده گوساله / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
+        title: "چیز برگر",
+        price: "۱۹۸",
+        material: "برگر گوشت ۱۸۰ گرم / پنیر چدار / سیب زمینی سرخ شده / سس کچاپ"
     },
+    {
+        category_name: "برگر",
+        title: "ماشروم برگر",
+        price: "۲۰۸",
+        material: "برگر گوشت ۱۸۰ گرم / پنیر چدار / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
+    },
+    {
+        category_name: "برگر",
+        title: "دابل داون",
+        price: "۲۵۰",
+        material: "۲ عدد سینه مرغ سوخاری / بیکن / پنیر چدار / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
+    },
+    // {
+    //     category_name: "برگر",
+    //     title: "ریب برگر",
+    //     price: "۳۲۰",
+    //     material: "350 گرم گوشت دنده گوساله / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی",
+    //     sold_out: true,
+    // },
     {
         category_name: "برگر",
         title: "میکس برگر",
         price: "۲۹۹",
-        material: "180 گرم برگر گوشت / 150 گرم سینه مرغ گریل / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
+        material: "180 گرم برگر گوشت / 150 گرم سینه مرغ گریل / سیب زمینی سرخ شده / بیکن / سس کچاپ / سس پارسلی"
     },
 
 
@@ -410,7 +444,7 @@ const items = [
         category_name: "پاستا",
         title: "پاستا فتو آلفردو",
         price: "۱۹۹",
-        material: "پاستا فتوچینی / سس گوجه / توپک مرغ سوخاری / پنیر پارمسان"
+        material: "پاستا فتوچینی / سس آلفردو / توپک مرغ گریل / پنیر پارمسان"
     },
     {
         category_name: "پاستا",
@@ -423,104 +457,203 @@ const items = [
     //category : crispy
     {
         category_name: "ملل",
-        title: "تمپورا ماهی",
-        price: "۲۹۰",
-        material: "200 گرم ماهی شیر طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
-    },
-    {
-        category_name: "ملل",
-        title: "تمپورا میگو",
-        price: "۲۲۵",
-        material: "150 گرم میگو طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
-    },
-    {
-        category_name: "ملل",
-        title: "اسپرینگ رول",
-        price: "۱۸۵",
-        material: "گوشت طعم دار شده بهمراه پنیر موزارلا پیچیده شده در نان یوفکا / سس سوئیت چیلی / سیب زمینی سرخ شده"
-    },
-    {
-        category_name: "ملل",
-        title: "چیکن وینگز",
-        price: "۲۹۰",
-        material: "بال مرغ سوخاری / سیب زمینی سرخ شده / سس پارسلی / سس باربیکیو"
+        title: "کراکت سیب زمینی",
+        price: "۱۵۰",
+        material: "پوره سیب زمینی سوخاری / سیب زمینی سرخ شده / سس کچاپ / سس پارسلی"
     },
     {
         category_name: "ملل",
         title: "چیکن بالز",
         price: "۱۶۵",
-        material: "توپک مرغ و پنیر / سس پارسلی / سس کچاپ / سیب زمینی سرخ شده"
+        material: "توپک مرغ و پنیر / سس باربیکیو / سس کچاپ / سیب زمینی سرخ شده"
+    },
+    {
+        category_name: "ملل",
+        title: "اسپرینگ رول",
+        price: "۱۸۵",
+        material: "۵ عدد / سس پارسلی / سس سوئیت چیلی / سیب زمینی سرخ شده"
+    },
+    {
+        category_name: "ملل",
+        title: "سوشی ماکیرول",
+        price: "۱۹۵",
+        material: "سبزیجات / برنج فوجی موری"
+    },
+    {
+        category_name: "ملل",
+        title: "تمپورا ماهی",
+        price: "۱۹۵",
+        material: "۱۵۰ گرم ماهی شیر طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
+    },
+    // {
+    //     category_name: "ملل",
+    //     title: "تمپورا میگو",
+    //     price: "۲۲۵",
+    //     material: "150 گرم میگو طعم دار سوخاری / سیب زمینی سرخ شده / سس تارتار"
+    // },
+    {
+        category_name: "ملل",
+        title: "سوئیت اند ساور",
+        price: "۲۴۰",
+        material: "۱۵۰ گرم سینه مرغ سوخاری با کاور سس ترش و شیرین / سیب زمینی سرخ شده / سس پارسلی / سس کچاپ"
     },
     {
         category_name: "ملل",
         title: "سوشی دراگون",
         price: "۲۶۵",
-        material: "برنج فوجی موری / جلبک خوراکی / میگو / مایونز ژاپنی"
+        material: "برنج فوجی موری / جلبک خوراکی / میگو سوخاری / آواکادوو / مایونز ژاپنی"
     },
     {
         category_name: "ملل",
-        title: "سوشی گرین",
-        price: "۱۸۵",
-        material: "آووکادو / خیار / کدو / برنج فوجی موری / جلبک خوراکی / مایونز ژاپنی"
-    },
-
-
-    //category : stew and food
-    {
-        category_name: "خورش و خوراک",
-        title: "چلو خورش طهرونی",
-        price: "",
-        sold_out: true,
+        title: "چیکن وینگز",
+        price: "۱۹۹",
+        material: "بال مرغ سوخاری / سیب زمینی سرخ شده / سس پارسلی / سس باربیکیو"
     },
     {
-        category_name: "خورش و خوراک",
-        title: "چلو خورش فسنجان با گوشت",
-        price: "۲۹۵",
-        material: "250 گرم خورش فسنجان بهمراه 200 گرم گوشت گوساله",
-        sold_out: true,
-    },
-    {
-        category_name: "خورش و خوراک",
-        title: "چلو خورش فسنجان با مرغ",
-        price: "۲۹۵",
-        material: "250 گرم خورش فسنجان بهمراه یک عدد جوجه مرغ 31 روزه",
-        sold_out: true,
-    },
-    {
-        category_name: "خورش و خوراک",
-        title: "ماهی قزل آلا به سبک کاخ لانژ",
-        price: "۲۵۰",
-        material: "400 گرم ماهی قزل آلا بهمراه سس فسنجان",
-        sold_out: true,
-    },
-    {
-        category_name: "خورش و خوراک",
-        title: "ماهیچه گوسفندی",
-        price: "۴۵۰",
-        material: "500 گرم ماهیچه گوسفندی / سس پیاز / سس ..",
-        sold_out: true,
-    },
-    {
-        category_name: "خورش و خوراک",
-        title: "گردن گوسفندی",
-        price: "۳۷۰",
-        material: "500 گرم گردن گوسفندی / سس پیاز سس ...",
-        sold_out: true,
-    },
-    {
-        category_name: "خورش و خوراک",
-        title: "خوراک زبان",
+        category_name: "ملل",
+        title: "باربیکیو وینگز",
         price: "۲۹۰",
-        material: "150 گرم زبان گوساله بهمراه سس قارچ",
-        sold_out: true,
+        material: "بال مرغ سوخاری کاور شده با سس باربیکیو / سیب زمینی سرخ شده / سس پارسلی / سس باربیکیو"
+    },
+    
+   
+
+
+    //category : ghelian
+    {
+        category_name: "قلیان",
+        title: "دو سیب",
+        price: "۱۳۰",
+        material: ""
     },
     {
-        category_name: "خورش و خوراک",
-        title: "اکبر جوجه",
-        price: "۱۹۵",
-        material: "600 گرم جوجه مرغ 21 روزه /سس انار",
-        sold_out: true,
+        category_name: "قلیان",
+        title: "دو سیب آلبالو",
+        price: "۱۳۰",
+        material: ""
     },
+    {
+        category_name: "قلیان",
+        title: "آلبالو",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "لاو",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "هندوانه",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "هندوانه یخ",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "شاتوت بستنی",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "سیب یخ",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "دلار",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "شیر قهوه",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "معجون شراب زعفران",
+        price: "۱۳۰",
+        material: ""
+    },
+    {
+        category_name: "قلیان",
+        title: "چای کلاسیک قوری",
+        price: "۴۰",
+        material: "لیوان . قوری چایی دمی + آب جوش + دارچین + گل سرخ + نبات + شکلات شیری "
+    },
+    {
+        category_name: "قلیان",
+        title: "بشقاب مزه",
+        price: "۱۰۰",
+        material: "حمص / لبنه بالزعتر / محمره"
+    },
+    //category : stew and food
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "چلو خورش طهرونی",
+    //     price: "",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "چلو خورش فسنجان با گوشت",
+    //     price: "۲۹۵",
+    //     material: "250 گرم خورش فسنجان بهمراه 200 گرم گوشت گوساله",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "چلو خورش فسنجان با مرغ",
+    //     price: "۲۹۵",
+    //     material: "250 گرم خورش فسنجان بهمراه یک عدد جوجه مرغ 31 روزه",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "ماهی قزل آلا به سبک کاخ لانژ",
+    //     price: "۲۵۰",
+    //     material: "400 گرم ماهی قزل آلا بهمراه سس فسنجان",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "ماهیچه گوسفندی",
+    //     price: "۴۵۰",
+    //     material: "500 گرم ماهیچه گوسفندی / سس پیاز / سس ..",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "گردن گوسفندی",
+    //     price: "۳۷۰",
+    //     material: "500 گرم گردن گوسفندی / سس پیاز سس ...",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "خوراک زبان",
+    //     price: "۲۹۰",
+    //     material: "150 گرم زبان گوساله بهمراه سس قارچ",
+    //     sold_out: true,
+    // },
+    // {
+    //     category_name: "خورش و خوراک",
+    //     title: "اکبر جوجه",
+    //     price: "۱۹۵",
+    //     material: "600 گرم جوجه مرغ 21 روزه /سس انار",
+    //     sold_out: true,
+    // },
 
     //hot drink
     {
@@ -531,14 +664,8 @@ const items = [
     },
     {
         category_name: "نوشیدنی گرم",
-        title: "چای کلاسیک قوری",
-        price: "۴۰",
-        material: "لیوان . قوری چایی دمی + آب جوش + دارچین + گل سرخ + نبات + شکلات شیری "
-    },
-    {
-        category_name: "نوشیدنی گرم",
         title: "چای انگلیسی",
-        price: "۵۶",
+        price: "۵۵",
         material: "چای دمی + شیر 50 میل + سیروپ کارامل + شکلات شیری"
     },
     {
@@ -573,12 +700,6 @@ const items = [
     },
     {
         category_name: "نوشیدنی گرم",
-        title: "وایت چاکلت",
-        price: "۸۰",
-        material: "پودر هات یا وایت 25 گرم + شیر 180 میل"
-    },
-    {
-        category_name: "نوشیدنی گرم",
         title: "ماچالاته",
         price: "۶۲",
         material: "چای ماچا 20 گرم + شیر"
@@ -607,7 +728,7 @@ const items = [
     {
         category_name: "نوشیدنی سرد",
         title: "بلک پینک لاته",
-        price: "۹۸",
+        price: "۹۵",
         material: "ماست توت فرنگی + شیر فوم دار شده 200 میل + اسپرسو + کربن"
     },
     {
@@ -623,6 +744,53 @@ const items = [
         material: "تاپینگ + وانیل + کارامل + فندق + شکلات"
     },
 
+    // fruit juices
+    {
+        category_name: "آبمیوه",
+        title: "پرتقال",
+        price: "۷۵",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "زرشک",
+        price: "۶۰",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "انار",
+        price: "۶۰",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "آلبالو",
+        price: "۶۰",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "آناناس",
+        price: "۹۰",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "انبه",
+        price: "۹۰",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "طالبی",
+        price: "۷۵",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "هندوانه",
+        price: "۷۵",
+    },
+    {
+        category_name: "آبمیوه",
+        title: "شیر موز",
+        price: "۹۵",
+    },
+
 
     //shakes
     {
@@ -634,7 +802,7 @@ const items = [
     {
         category_name: "شیک",
         title: "حاج خلیفه",
-        price: "۸۵",
+        price: "۹۸",
         material: "باقلوا + بستنی وانیل + سوهان + گز + شیر"
     },
     {
@@ -646,7 +814,7 @@ const items = [
     {
         category_name: "شیک",
         title: "جیم لانژ",
-        price: "۹۹",
+        price: "۱۰۵",
         material: "خرما + عسل + موز + کره بادام زمینی + جو دو سر پرک + کنجد + بستنی وانیل + شیر"
     },
     {
@@ -721,12 +889,12 @@ const items = [
     {
         category_name: "کیک و دسر",
         title: "وافل وانیل نوتلا",
-        price: "۷۰",
+        price: "۹۰",
     },
     {
         category_name: "کیک و دسر",
         title: "وافل وانیل توت فرنگی",
-        price: "۷۵",
+        price: "۸۵",
     },
     {
         category_name: "کیک و دسر",
@@ -846,12 +1014,6 @@ const items = [
     {
         category_name: "ماکتیل",
         title: "موهیتو - رد موهیتو - بلو موهیتو ",
-        price: "۷۵",
-        material: "توت فرنگی + بلوکاراسائو"
-    },
-    {
-        category_name: "ماکتیل",
-        title: "رد موهیتو - بلو موهیتو",
         price: "۸۵",
         material: "توت فرنگی + بلوکاراسائو"
     },
