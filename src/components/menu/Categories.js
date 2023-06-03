@@ -30,7 +30,7 @@ import smoothiea from "../../assets/smoothiea.png";
 import cake from "../../assets/cake.png";
 import cafee from "../../assets/cafee.png";
 import coaktil from "../../assets/coaktil.png";
-import nokah from "../../assets/nokah.png";
+import nokah from "../../assets/hokah.png";
 import fruit from "../../assets/fruit-juices.png";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
