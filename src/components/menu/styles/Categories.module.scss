@@ -1,15 +1,27 @@
-// .categoryButtons {
-//     display: flex !important;
-//     justify-content: center !important;
-//     align-items: center !important;
-//     bottom: 0 !important;
-// }
-
-
 .proSidebar {
     position: fixed !important;
-    max-height: 90% !important;
-    top: calc(50% - 90% / 2);
+    max-height: 100% !important;
+    top: 0;
+}
+
+.categoryBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-image: url("../../../assets/category_box.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: contain;
+    border: 1.5px solid #BE9649;
+    padding: 3px 0px !important;
+    margin: .5rem 5px !important;
+    border-radius: 1rem !important;
+
+    img{
+        width: 55px !important;
+        height: 55px !important;
+    }
 }
 
 .sidebar {
@@ -29,4 +41,17 @@
     font-size: 0.8rem !important;
     font-weight: 600 !important;
     padding-right: 0.3rem !important;
+    margin-top: 0.4rem !important;
+}
+
+.currencyCategorySelected {
+    img {
+        transform: scale(1.25);
+        transition: transform 0.1s;
+    }
+    p {
+        transform: scale(1.25);
+        transition: transform 0.1s;
+        color: #FACF69;
+    }
 }

@@ -7,8 +7,6 @@ import Grid from "@mui/material/Grid";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import sold_out from '../../assets/sold_out.png';
-
 const Menu = ({ items }) => {
     // const { cart } = useSelector((state) => state);
     // const dispatch = useDispatch();
@@ -31,59 +29,83 @@ const Menu = ({ items }) => {
     // };
 
     return (
-        <Container>
-            <div className={classes.background}>
-                {items?.map((menuItems) => {
-                    return (
-                        <div className={classes.menuItemsContainer}>
-                            <Grid className={classes.menuGrid}>
-                                {menuItems?.sold_out &&
-                                    <LazyLoadImage src={sold_out} className={classes.sold_out} />
-                                }
-                                <div className={classes.menuItems}>
-                                    <div>
-                                        <p style={{ fontSize: "1.3rem !important", color: "#d4c9ab" }}>
-                                            {menuItems.title}
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p style={{ fontSize: "1.3rem !important", color: "#d4c9ab" }}>
-                                            {menuItems.price}
-                                        </p>
-                                    </div>
-                                </div>
+        <Container sx={{ paddingLeft: '0px', paddingRight: '0px' }}>
+            {items?.map((category) => (
+                <>
+                    {category.id !== 0 ?
+                        <div className={classes.background}>
+                            <p style={{
+                                fontSize: "2.3rem",
+                                display: 'flex',
+                                justifyContent: 'center',
+                                textAlign: 'center',
+                                color: "#d4c9ab"
+                            }}>
+                                {category.name}
+                            </p>
+                            <div className={classes.astrodivider}>
+                                <div className={classes.astrodividermask}></div>
+                                <span>
+                                    <i>&#10038;</i>
+                                </span>
+                            </div>
+                            {category?.category_foods?.map((menuItems) => {
+                                return (
+                                    <div className={classes.menuItemsContainer}>
+                                        <Grid className={classes.menuGrid}>
+                                            <div className={classes.menuCard}>
+                                                <LazyLoadImage src={menuItems.image_link} className={classes.foodImage} />
+                                                <div className={classes.menuItems}>
+                                                    <div>
+                                                        <p style={{ fontSize: "1.4rem", color: "#d4c9ab" }}>
+                                                            {menuItems.name}
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p style={{ fontSize: "1.4rem", color: "#d4c9ab" }}>
+                                                            {menuItems.price !== 0 ? menuItems.price : null}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className={classes.itemsDesc}>
+                                                    <span style={{ color: "#d4cbb4", fontSize: ".75rem" }}>{menuItems.material}</span>
+                                                </div>
+                                            </div>
 
-                                <div className={classes.menuItems}>
-                                    {/* <div>
+                                            {/* <div className={classes.menuItems}>
+                            <div>
 
-                                       {cart.some((p) => p.id === items.id) ? (
-                                        <Button
+                               {cart.some((p) => p.id === items.id) ? (
+                                <Button
 
-                                        // onClick={removeFromCart}
-                                        >
-                                            < RemoveCircleOutlineIcon className={classes.removeButton} />
-                                        </Button>
-                                         ) : ( 
-                                        <Button
-                                        // onClick={addToCart}
-                                        >
-                                            <ControlPointIcon className={classes.addButton} />
-                                        </Button>
-                                         )} 
-                                    </div> */}
-                                    <div className={classes.itemsDesc}>
-                                        <span style={{ color: "#d4cbb4" }}>{menuItems.material}</span>
+                                // onClick={removeFromCart}
+                                >
+                                    < RemoveCircleOutlineIcon className={classes.removeButton} />
+                                </Button>
+                                 ) : ( 
+                                <Button
+                                // onClick={addToCart}
+                                >
+                                    <ControlPointIcon className={classes.addButton} />
+                                </Button>
+                                 )} 
+                            </div>
+                        </div> */}
+                                            {/* <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}> */}
+                                            {/* <LazyLoadImage src={divider} style={{ width: '100%', paddingTop: '1rem' }} /> */}
+                                            {/* <div className={classes.menuItemDash}></div> */}
+                                            {/* </div> */}
+                                        </Grid>
                                     </div>
-                                </div>
-                                <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                    {/* <LazyLoadImage src={divider} style={{ width: '100%', paddingTop: '1rem' }} /> */}
-                                    <div className={classes.menuItemDash}></div>
-                                </div>
-                            </Grid>
-                        </div>
-                    )
-                })}
-            </div >
+                                )
+                            })}
+                        </div >
+                        :
+                        null
+                    }
+                </>
+            )
+            )}
         </Container >
     );
 };
