@@ -10,6 +10,8 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 import { Link } from 'react-router-dom';
 
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import logo from '../../assets/logo2.jpeg';
@@ -122,6 +124,9 @@ const MainPage = () => {
                                     </div >
                                 )
                         }
+                        <a href="http://instagram.com/_u/kakh_lounge/" style={{ textDecoration: "none", color: "white", display: "flex", justifyContent: "center", paddingTop: "1rem" }}>
+                            <Button variant='outlined' className={classes.menuButton}>اینستاگرام ما <InstagramIcon /> </Button>
+                        </a>
                     </div>
                 </div>
             </div>

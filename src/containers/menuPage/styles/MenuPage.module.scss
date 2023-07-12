@@ -1,16 +1,39 @@
 .menuBackground {
     background-image: url(../../../assets/back.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh !important;
-    min-height: 100vh !important;
-    // border-radius: 2rem 2rem 0 0;
-    // margin-top: 10rem !important;
     z-index: 10;
 
     margin-right: 0 !important;
     overflow-y: scroll !important;
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
+    position: relative;
+}
+
+// @keyframes scrolling {
+//     0% {
+//         transform: scale(1.5);
+//     }
+//     100% {
+//         background-color: red;
+//         left: 0px;
+//         top: 0px;
+//     }
+// }
+
+.heightIcon {
+    position: absolute !important;
+    top: 50% !important;
+    right: 4rem !important;
+    font-size: 3.4rem !important;
+    transform: translate(0%, -50%) !important;
+    z-index: 100000 !important;
+    color: #be9649 !important;
+    // animation-name: scrolling;
+    // animation-duration: 4s;
+    // animation-iteration-count: infinite;
 }
 
 .backgroundCover {

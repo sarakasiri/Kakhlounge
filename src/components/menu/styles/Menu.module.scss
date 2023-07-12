@@ -84,7 +84,7 @@
 }
 
 .astrodivider {
-    margin: 40px auto !important;
+    margin: 50px auto !important;
     width: 400px;
     max-width: 100%;
     position: relative;
@@ -105,8 +105,8 @@
     box-shadow: 0 0 8px #FACF69;
 }
 .astrodivider span {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     bottom: 100%;
     margin-bottom: -25px !important;
@@ -128,4 +128,7 @@
     line-height: 40px;
     font-style: normal;
     color: #204a0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

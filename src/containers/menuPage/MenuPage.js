@@ -7,6 +7,8 @@ import Menu from '../../components/menu/Menu';
 
 import { Grid } from '@mui/material';
 
+import HeightIcon from '@mui/icons-material/Height';
+
 import allfoods from '../../assets/allfoods.webp';
 
 import CallApi from '../../functions/CallApi';
@@ -66,6 +68,7 @@ const MenuPage = () => {
                     <Menu className={classes.menuItems} items={menuItems} />
                 </Grid>
                 <Grid item xs={3}>
+                    {/* <HeightIcon className={classes.heightIcon} /> */}
                     <Categories
                         categories={categories}
                         filterItems={renderFood}

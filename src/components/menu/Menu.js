@@ -46,7 +46,9 @@ const Menu = ({ items }) => {
                             <div className={classes.astrodivider}>
                                 <div className={classes.astrodividermask}></div>
                                 <span>
-                                    <i>&#10038;</i>
+                                    <i>
+                                    <LazyLoadImage src={category.icon_link} style={{ width: "3.5rem" }} />
+                                    </i>
                                 </span>
                             </div>
                             {category?.category_foods?.map((menuItems) => {
