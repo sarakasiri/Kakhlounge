@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './styles/MainPage.module.scss';
 
-import Carousel from 'react-material-ui-carousel';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+
+import InstagramIcon from '@mui/icons-material/Instagram';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 import { Link } from 'react-router-dom';
-
-import InstagramIcon from '@mui/icons-material/Instagram';
-
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Carousel from 'react-material-ui-carousel';
+
+import CallApi from '../../functions/CallApi';
+import { GetMainPageImagesAPI } from '../../api/slider';
+import { GetInfoAPI } from '../../api/info';
 
 import logo from '../../assets/logo2.jpeg';
 
@@ -21,56 +24,36 @@ const MainPage = () => {
     let today = new Date();
     let currentHour = today.getHours()
 
-    var items = [
-        {
-            image: require("../../assets/slider/1.jpg")
-        },
-        {
-            image: require("../../assets/slider/2.jpg")
-        },
-        {
-            image: require("../../assets/slider/3.jpg")
-        },
-        {
-            image: require("../../assets/slider/4.jpg")
-        },
-        {
-            image: require("../../assets/slider/5.jpg")
-        },
-        {
-            image: require("../../assets/slider/6.jpg")
-        },
-        {
-            image: require("../../assets/slider/7.jpg")
-        },
-        {
-            image: require("../../assets/slider/8.jpg")
-        },
-        {
-            image: require("../../assets/slider/9.jpg")
-        },
-        {
-            image: require("../../assets/slider/10.jpg")
-        },
-        {
-            image: require("../../assets/slider/11.jpg")
-        },
-        {
-            image: require("../../assets/slider/12.jpg")
-        },
-        {
-            image: require("../../assets/slider/13.jpg")
-        },
-        {
-            image: require("../../assets/slider/14.jpg")
-        },
-        {
-            image: require("../../assets/slider/15.jpg")
-        },
-        {
-            image: require("../../assets/slider/16.jpg")
-        },
-    ];
+    const [sliderImages, setSliderImages] = useState([]);
+    const [instagram, setInstagram] = useState('');
+    const [startTime, setStartTime] = useState(10);
+    const [endTime, setEndTime] = useState(24);
+
+    useEffect(() => {
+        getSliderImages();
+        getResturantInfo();
+    }, []);
+
+    const getSliderImages = async () => {
+        try {
+            let response = await CallApi(GetMainPageImagesAPI());
+            setSliderImages(response);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    const getResturantInfo = async () => {
+        try {
+            let response = await CallApi(GetInfoAPI());
+            setInstagram(response.find(item => item.title === "INSTAGRAM").value);
+            let start = response.find(item => item.title === "StartTime").value;
+            setStartTime(Number(start.split(':')[0]));
+            let end = response.find(item => item.title === "EndTime").value;
+            setEndTime(Number(end.split(':')[0]));
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     return (
         <div className={classes.container}>
@@ -95,7 +78,7 @@ const MainPage = () => {
 
                     <div >
                         {
-                            currentHour > 10 & currentHour < 24 ?
+                            currentHour > startTime & currentHour < endTime ?
                                 (
                                     <div style={{ display: "flex", flexDirection: "row" }}>
                                         <Typography sx={{ color: "#47a861" }} className={classes.mainPagetext}>
@@ -124,7 +107,7 @@ const MainPage = () => {
                                     </div >
                                 )
                         }
-                        <a href="http://instagram.com/_u/kakh_lounge/" style={{ textDecoration: "none", color: "white", display: "flex", justifyContent: "center", paddingTop: "1rem" }}>
+                        <a href={`http://instagram.com/_u/${instagram}/`} style={{ textDecoration: "none", color: "white", display: "flex", justifyContent: "center", paddingTop: "1rem" }}>
                             <Button variant='outlined' className={classes.menuButton}>اینستاگرام ما <InstagramIcon /> </Button>
                         </a>
                     </div>
@@ -143,9 +126,9 @@ const MainPage = () => {
                     }}
                 >
                     {
-                        items.map((item, i) => (
+                        sliderImages.map((item, i) => (
                             <Box className={classes.slider} key={i} style={{ height: "100vh" }}>
-                                <LazyLoadImage style={{ width: "100%", height: "100%", objectFit: "cover" }} src={item.image} />
+                                <LazyLoadImage style={{ width: "100%", height: "100%", objectFit: "cover" }} src={item.image_url} />
                             </Box>
                         ))
                     }
