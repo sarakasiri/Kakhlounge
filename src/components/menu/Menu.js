@@ -39,7 +39,7 @@ const Menu = ({ items }) => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 textAlign: 'center',
-                                color: "#d4c9ab"
+                                color: "#665c3e"
                             }}>
                                 {category.name}
                             </p>

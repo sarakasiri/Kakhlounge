@@ -8,7 +8,12 @@ import Typography from "@mui/material/Typography";
 
 import CallApi from '../../functions/CallApi';
 import { GetInfoAPI } from '../../api/info';
+import { Divider, Grid } from '@mui/material';
 
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ShareIcon from '@mui/icons-material/Share';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const RestaurantInfo = () => {
     const [instagram, setInstagram] = useState('');
@@ -37,21 +42,51 @@ const RestaurantInfo = () => {
     }
     return (
         <div className={classes.infoBackground}>
-            <div style={{ width: "20rem", padding: "2rem 0 1rem 0" }}>
+            <Grid container xs={12} className={classes.infoBox}>
+                <Grid item xs={1} className={classes.infoIcons}>
+                    <AccessTimeIcon/>
+                </Grid>
+                <Grid item xs={8}>
                 <Typography className={classes.restaurantInfoTitle}>ساعات کاری</Typography>
                 <Typography className={classes.restaurantInfo}>هر روز هفته : {startTime} تا {endTime}</Typography>
-            </div>
-            <div className={classes.menuItemDash}></div>
-            <div style={{ width: "20rem", paddingTop: "1rem " }}>
+                </Grid>
+            </Grid>
+            <Divider/>
+            <Grid container xs={12}  className={classes.infoBox}>
+                <Grid item xs={1} className={classes.infoIcons}>
+                    <LocationOnIcon/>
+                </Grid>
+                <Grid item xs={8}>
                 <Typography className={classes.restaurantInfoTitle}>آدرس رستوران</Typography>
                 <Typography className={classes.restaurantInfo}>{address}</Typography>
-                <Typography className={classes.restaurantInfo} sx={{ paddingTop: "1rem", fontWeight: "600" }}>تلفن : <a href={`tel:${phoneNumber}`} style={{ textDecoration: "none", color: "black" }}>{phoneNumber}</a></Typography>
-            </div>
-            <div className={classes.menuItemDash}></div>
-            <div style={{ width: "20rem", padding: "2rem 0 1rem 0" }}>
+               </Grid>
+            </Grid>
+            <Divider/>
+            <Grid container xs={12}  className={classes.infoBox}>
+                <Grid item xs={1} className={classes.infoIcons}>
+                    <PhoneInTalkIcon/>
+                </Grid>
+                <Grid item xs={8}>
+                <Typography className={classes.restaurantInfoTitle}>تلفن</Typography>
+                <Typography className={classes.restaurantInfo}>
+                    <a href={`tel:${phoneNumber}`} className={classes.phoneNumber}>{phoneNumber}</a>
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Divider/>
+            <Grid container xs={12}  className={classes.infoBox}>
+            <Grid item xs={1} className={classes.infoIcons}>
+                <ShareIcon/>
+            </Grid>
+                <Grid item xs={8}>
                 <Typography className={classes.restaurantInfoTitle}>شبکه های اجتماعی</Typography>
-                <Typography className={classes.restaurantInfo} sx={{ paddingTop: "0.8rem", fontWeight: "600" }}><a href={`http://instagram.com/_u/${instagram}/`} style={{ textDecoration: "none", color: "black" }}><InstagramIcon /></a></Typography>
-            </div>
+                <Typography className={classes.restaurantInfo} sx={{ paddingTop: "0.8rem", fontWeight: "600" }}>
+                    <a href={`http://instagram.com/_u/${instagram}/`} style={{ textDecoration: "none", color: "black" }}>
+                        <InstagramIcon />
+                        </a>
+                        </Typography>
+                </Grid>
+            </Grid>
         </div>
     );
 };
