@@ -28,6 +28,16 @@ const Menu = ({ items }) => {
     //     // });
     // };
 
+    const checkFormat = (fileLink) => {
+        let format = fileLink.split(".");
+        format = format[format.length - 1];
+        if (["jpg", "gif", "png", "jpeg", "bmp"].includes(format)) {
+            return "image";
+        } else {
+            return "video";
+        }
+    }
+
     return (
         <Container sx={{ paddingLeft: '0px', paddingRight: '0px' }}>
             {items?.map((category) => (
@@ -47,7 +57,7 @@ const Menu = ({ items }) => {
                                 <div className={classes.astrodividermask}></div>
                                 <span>
                                     <i>
-                                    <LazyLoadImage src={category.icon_link} style={{ width: "3.5rem" }} />
+                                        <LazyLoadImage src={category.icon_link} style={{ width: "3.5rem" }} />
                                     </i>
                                 </span>
                             </div>
@@ -56,7 +66,14 @@ const Menu = ({ items }) => {
                                     <div className={classes.menuItemsContainer}>
                                         <Grid className={classes.menuGrid}>
                                             <div className={classes.menuCard}>
-                                                <LazyLoadImage src={menuItems.image_link} className={classes.foodImage} />
+                                                {checkFormat(menuItems.image_link) === "image" ? (
+                                                    <LazyLoadImage src={menuItems.image_link} className={classes.foodImage} />
+                                                ) : (
+                                                    <video className={classes.foodImage} loop autoPlay muted>
+                                                        <source src={menuItems.image_link} type="video/mp4" />
+                                                    </video>
+                                                )}
+
                                                 <div className={classes.menuItems}>
                                                     <div>
                                                         <p style={{ fontSize: "1.4rem", color: "#d4c9ab" }}>

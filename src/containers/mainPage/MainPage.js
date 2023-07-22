@@ -17,7 +17,7 @@ import CallApi from '../../functions/CallApi';
 import { GetMainPageImagesAPI } from '../../api/slider';
 import { GetInfoAPI } from '../../api/info';
 
-import logo from '../../assets/logo2.jpeg';
+import logo from '../../assets/logo2.png';
 
 
 const MainPage = () => {
