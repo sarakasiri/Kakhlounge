@@ -1,10 +1,11 @@
 .menuBackground {
-    background-image: url(../../../assets/back.jpg);
+    // background-image: url(../../../assets/back.jpg);
     background-size: 100%;
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     height: 100vh !important;
     z-index: 10;
-
+    background-size: cover;
+    background-position: center;
     margin-right: 0 !important;
     overflow-y: scroll !important;
     -ms-overflow-style: none !important;

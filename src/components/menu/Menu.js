@@ -49,7 +49,7 @@ const Menu = ({ items }) => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 textAlign: 'center',
-                                color: "#665c3e"
+                                color: "transparent"
                             }}>
                                 {category.name}
                             </p>
@@ -76,18 +76,18 @@ const Menu = ({ items }) => {
 
                                                 <div className={classes.menuItems}>
                                                     <div>
-                                                        <p style={{ fontSize: "1.4rem", color: "#d4c9ab" }}>
+                                                        <p style={{ fontSize: "1.4rem", color: "#fefefe" }}>
                                                             {menuItems.name}
                                                         </p>
                                                     </div>
                                                     <div>
-                                                        <p style={{ fontSize: "1.4rem", color: "#d4c9ab" }}>
+                                                        <p style={{ fontSize: "1.4rem", color: "#fefefe" }}>
                                                             {menuItems.price !== 0 ? menuItems.price : null}
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div className={classes.itemsDesc}>
-                                                    <span style={{ color: "#d4cbb4", fontSize: ".75rem" }}>{menuItems.material}</span>
+                                                    <span style={{ color: "#fefefe", fontSize: ".75rem" }}>{menuItems.material}</span>
                                                 </div>
                                             </div>
 

@@ -7,21 +7,29 @@ import Menu from '../../components/menu/Menu';
 
 import { Grid } from '@mui/material';
 
-import HeightIcon from '@mui/icons-material/Height';
-
 import allfoods from '../../assets/allfoods.webp';
 
 import CallApi from '../../functions/CallApi';
 import { GetMenuAPI } from '../../api/menu';
+import { GetInfoAPI } from '../../api/info';
 
 const MenuPage = () => {
     const [categories, setCategories] = useState([]);
     const [menuItems, setMenuItems] = useState([]);
-
+    const [menuBackgroundImage, setMenuBackgroundImage] = useState(null);
 
     useEffect(() => {
+        getMenuBackground();
         getMenuDatas();
     }, []);
+    const getMenuBackground = async () => {
+        try {
+            let response = await CallApi(GetInfoAPI());
+            setMenuBackgroundImage(response.find(item => item.title === "MenuImage").image);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     const getMenuDatas = async () => {
         // setIsLoading(true);
@@ -62,7 +70,7 @@ const MenuPage = () => {
                     <Example />
                 </Grid>
             </Grid> */}
-            <Grid container xs={12} className={classes.menuBackground}>
+            <Grid container xs={12} className={classes.menuBackground} sx={{ backgroundImage: `url(${menuBackgroundImage})` }}>
                 <Grid item xs={9} className={classes.menuItems}>
                     <div className={classes.backgroundCover}></div>
                     <Menu className={classes.menuItems} items={menuItems} />
