@@ -4,6 +4,7 @@ import classes from "./styles/Menu.module.scss";
 
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Typography from '@mui/material/Typography';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -45,11 +46,11 @@ const Menu = ({ items }) => {
                     {category.id !== 0 ?
                         <div className={classes.background}>
                             <p style={{
-                                fontSize: "2.3rem",
+                                fontSize: "1.8rem",
                                 display: 'flex',
                                 justifyContent: 'center',
                                 textAlign: 'center',
-                                color: "transparent"
+                                color: "#fefefe"
                             }}>
                                 {category.name}
                             </p>
@@ -60,6 +61,15 @@ const Menu = ({ items }) => {
                                         <LazyLoadImage src={category.icon_link} style={{ width: "3.5rem" }} />
                                     </i>
                                 </span>
+                            </div>
+                            <div className={classes.mainDivShadowContainer}>
+                                <div className={classes.maintRomaDiv}>
+                                    <div className={classes.typingDiv}>
+                                        <Typography sx={{ color: "#fafafa" }} className={classes.romatext}>
+                                            کافه روما، تجربه یک رویا
+                                        </Typography>
+                                    </div>
+                                </div>
                             </div>
                             {category?.category_foods?.map((menuItems) => {
                                 return (

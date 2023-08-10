@@ -65,14 +65,24 @@ const MainPage = () => {
             </div>
 
             <div className={classes.mainDivShadowContainer}>
+                <div className={classes.maintRomaDiv}>
+                    <div className={classes.typingDiv}>
+                    <Typography sx={{ color: "#fafafa" }} className={classes.romatext}>
+                        کافه روما، تجربه یک رویا
+                    </Typography>
+                    </div>
+                </div>
+            </div>
+
+            <div className={classes.mainDivShadowContainer}>
                 <div className={classes.mainDiv}>
 
                     <div>
                         <Link to="/restaurant-info">
-                            <Button variant='outlined' className={classes.menuButton}>اطلاعات رستوران</Button>
+                            <Button variant='outlined' className={classes.menuButton}>اطلاعات روما</Button>
                         </Link>
                         <Link to="/menu">
-                            <Button variant='outlined' className={classes.menuButton}>منوی رستوران</Button>
+                            <Button variant='outlined' className={classes.menuButton}>منوی کافه</Button>
                         </Link>
                     </div>
 
@@ -82,7 +92,7 @@ const MainPage = () => {
                                 (
                                     <div style={{ display: "flex", flexDirection: "row" }}>
                                         <Typography sx={{ color: "#47a861" }} className={classes.mainPagetext}>
-                                            درب های رستوران به روی شما باز است
+                                            درب های کافه به روی شما باز است
                                         </Typography>
                                         <FiberManualRecordIcon
                                             sx={{
@@ -95,7 +105,7 @@ const MainPage = () => {
                                 ) : (
                                     <div style={{ display: "flex", flexDirection: "row" }}>
                                         <Typography sx={{ color: "#ff0335" }} className={classes.mainPagetext}>
-                                            تیم کاخ لانژ در حال استراحت میباشد
+                                            تیم کافه روما در حال استراحت میباشد
                                         </Typography>
                                         <FiberManualRecordIcon
                                             sx={{

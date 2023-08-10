@@ -87,10 +87,10 @@
 }
 
 .astrodivider {
-    margin: 50px auto !important;
     width: 400px;
     max-width: 100%;
     position: relative;
+    margin: 50px auto !important;
 }
 
 .astrodividermask {
@@ -105,8 +105,9 @@
     width: 100%;
     height: 25px;
     border-radius: 125px / 12px;
-    box-shadow: 0 0 8px #424018;
+    box-shadow: 0 0 8px #bbb996;
 }
+
 .astrodivider span {
     width: 70px;
     height: 70px;
@@ -119,6 +120,7 @@
     box-shadow: 0 2px 4px #837d47;
     background: rgb(255, 252, 230);
 }
+
 .astrodivider i {
     position: absolute;
     top: 4px;
@@ -130,8 +132,73 @@
     text-align: center;
     line-height: 40px;
     font-style: normal;
-    color: #204a0f;
+    color: #a2af9c;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mainDivShadowContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.maintRomaDiv {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 4rem !important;
+    width: 20rem;
+    border-radius: 0.3rem !important;
+}
+
+.typingDiv{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+
+
+.romatext {
+    font-family: IRANSans_Normal !important;
+    font-size: 1.1rem !important;
+    overflow: hidden;
+    border-left: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 0;
+    direction: rtl;
+    animation:
+        typing 4.5s steps(40, end) infinite,
+        blink-caret 0.75s step-start infinite;
+}
+
+.textIcon {
+    font-size: 0.8rem !important;
+    padding-left: 0.3rem;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    60%{
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
 }
