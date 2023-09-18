@@ -76,7 +76,6 @@ const MainPage = () => {
 
             <div className={classes.mainDivShadowContainer}>
                 <div className={classes.mainDiv}>
-
                     <div>
                         <Link to="/restaurant-info">
                             <Button variant='outlined' className={classes.menuButton}>اطلاعات روما</Button>
@@ -117,9 +116,14 @@ const MainPage = () => {
                                     </div >
                                 )
                         }
-                        <a href={`http://instagram.com/_u/${instagram}/`} style={{ textDecoration: "none", color: "white", display: "flex", justifyContent: "center", paddingTop: "1rem" }}>
+                    </div>
+                    <div>
+                        <a href={`http://instagram.com/_u/${instagram}/`} style={{ textDecoration: "none", color: "white" }}>
                             <Button variant='outlined' className={classes.menuButton}>اینستاگرام ما <InstagramIcon /> </Button>
                         </a>
+                        <Link to="/birthday-items">
+                            <Button variant='outlined' className={classes.menuButton}>برگزاری تولد</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

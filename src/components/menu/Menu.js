@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import noimage from "../../assets/noimagefood.png";
+
 const Menu = ({ items }) => {
     // const { cart } = useSelector((state) => state);
     // const dispatch = useDispatch();
@@ -30,12 +32,16 @@ const Menu = ({ items }) => {
     // };
 
     const checkFormat = (fileLink) => {
-        let format = fileLink.split(".");
-        format = format[format.length - 1];
-        if (["jpg", "gif", "png", "jpeg", "bmp"].includes(format)) {
-            return "image";
+        if (fileLink === null) {
+            return "image"
         } else {
-            return "video";
+            let format = fileLink.split(".");
+            format = format[format.length - 1];
+            if (["jpg", "gif", "png", "jpeg", "bmp"].includes(format)) {
+                return "image";
+            } else {
+                return "video";
+            }
         }
     }
 
@@ -70,6 +76,13 @@ const Menu = ({ items }) => {
                                         </Typography>
                                     </div>
                                 </div>
+                                {category.description ? 
+                                    <div className={classes.categoryDescriptionDiv}>
+                                        <Typography sx={{ color: "#fafafa" }} className={classes.categoryDescriptionText}>
+                                            {category.description}
+                                        </Typography>
+                                    </div>
+                                : null}
                             </div>
                             {category?.category_foods?.map((menuItems) => {
                                 return (
@@ -77,7 +90,7 @@ const Menu = ({ items }) => {
                                         <Grid className={classes.menuGrid}>
                                             <div className={classes.menuCard}>
                                                 {checkFormat(menuItems.image_link) === "image" ? (
-                                                    <LazyLoadImage src={menuItems.image_link} className={classes.foodImage} />
+                                                    <LazyLoadImage src={menuItems.image_link === null ? noimage : menuItems.image_link} className={classes.foodImage} />
                                                 ) : (
                                                     <video className={classes.foodImage} loop autoPlay muted>
                                                         <source src={menuItems.image_link} type="video/mp4" />

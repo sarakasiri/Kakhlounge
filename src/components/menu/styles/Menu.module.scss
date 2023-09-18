@@ -141,6 +141,9 @@
 .mainDivShadowContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .maintRomaDiv {
@@ -154,13 +157,34 @@
     border-radius: 0.3rem !important;
 }
 
-.typingDiv{
+.categoryDescriptionDiv {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100% !important;
+    width: 80%;
+    overflow: hidden;
+    text-wrap: wrap;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem !important;
+}
+
+.typingDiv {
     width: max-content;
     display: flex;
     justify-content: center;
     direction: rtl;
 }
 
+.categoryDescriptionText {
+    font-family: IRANSans_Normal !important;
+    font-size: 1.1rem !important;
+    overflow: hidden;
+    direction: rtl;
+    text-align: center;
+}
 
 .romatext {
     font-family: IRANSans_Normal !important;
