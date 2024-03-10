@@ -1,15 +1,15 @@
 /* @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css); */
 
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
 
 .App {
-    max-height: 100% !important;
-    overflow: hidden !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
 }
 
 @font-face {
-	font-family: IRANSans_Normal;
-	font-style: normal;
-	font-weight: normal;
-	src: url('../../assets/fonts/IRANSans_Medium.ttf');
+  font-family: IRANSans_Normal;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/IRANSans_Medium.ttf");
 }

@@ -1,15 +1,15 @@
 .menuBackground {
-    background-image: url(../../../assets/back.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh !important;
-    z-index: 10;
+  background-image: url(../../../assets/back.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  z-index: 10;
 
-    margin-right: 0 !important;
-    overflow-y: scroll !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
-    position: relative;
+  margin-right: 0 !important;
+  overflow-y: scroll !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  position: relative;
 }
 
 // @keyframes scrolling {
@@ -24,45 +24,45 @@
 // }
 
 .heightIcon {
-    position: absolute !important;
-    top: 50% !important;
-    right: 4rem !important;
-    font-size: 3.4rem !important;
-    transform: translate(0%, -50%) !important;
-    z-index: 100000 !important;
-    color: #be9649 !important;
-    // animation-name: scrolling;
-    // animation-duration: 4s;
-    // animation-iteration-count: infinite;
+  position: absolute !important;
+  top: 50% !important;
+  right: 4rem !important;
+  font-size: 3.4rem !important;
+  transform: translate(0%, -50%) !important;
+  z-index: 100000 !important;
+  color: #be9649 !important;
+  // animation-name: scrolling;
+  // animation-duration: 4s;
+  // animation-iteration-count: infinite;
 }
 
 .backgroundCover {
-    position: absolute !important;
-    height: 100rem !important;
-    background-color: rgba(250, 144, 6, 0.497) !important;
-    z-index: 100;
+  position: absolute !important;
+  height: 100rem !important;
+  background-color: rgba(250, 144, 6, 0.497) !important;
+  z-index: 100;
 }
 
 .menuBackground::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .menuCarousel {
-    position: absolute;
-    z-index: -1;
-    padding-bottom: 10rem !important;
-    margin-top: -10rem !important;
+  position: absolute;
+  z-index: -1;
+  padding-bottom: 10rem !important;
+  margin-top: -10rem !important;
 }
 
 .menuItems {
-    direction: rtl !important;
-    margin-right: 0 !important;
-    overflow-y: scroll;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
-    padding-left: 0px !important;
+  direction: rtl !important;
+  margin-right: 0 !important;
+  overflow-y: scroll;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  padding-left: 0px !important;
 }
 
 .menuItems::-webkit-scrollbar {
-    display: none;
+  display: none;
 }

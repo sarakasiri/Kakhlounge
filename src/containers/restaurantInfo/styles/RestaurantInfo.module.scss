@@ -1,30 +1,35 @@
 .infoBackground {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .menuItemDash {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90% !important;
-    margin-top: 1rem !important;
-    border-image: linear-gradient(90deg, rgba(171, 169, 138, 1) 0%, rgba(87, 83, 49, 1) 50%, rgba(171, 169, 138, 1) 100%) 40;
-    border-width: 0.5px;
-    border-style: solid;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90% !important;
+  margin-top: 1rem !important;
+  border-image: linear-gradient(
+      90deg,
+      rgba(171, 169, 138, 1) 0%,
+      rgba(87, 83, 49, 1) 50%,
+      rgba(171, 169, 138, 1) 100%
+    )
+    40;
+  border-width: 0.5px;
+  border-style: solid;
 }
 
 .restaurantInfo {
-    font-family: IRANSans_Normal !important;
-    margin-top: 0.4rem !important;
+  font-family: IRANSans_Normal !important;
+  margin-top: 0.4rem !important;
 }
 
 .restaurantInfoTitle {
-    font-family: IRANSans_Normal !important;
-    font-size: 1.15rem !important;
-    font-weight: 700 !important;
+  font-family: IRANSans_Normal !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
 }

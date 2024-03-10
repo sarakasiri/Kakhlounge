@@ -1,22 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import './index.css';
+import "./index.css";
 
-import App from './app/App';
+import App from "./app/App";
 
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import axios from 'axios';
+import axios from "axios";
 
 axios.defaults.baseURL = "https://panel.kakhlounge.ir/";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 // reportWebVitals();

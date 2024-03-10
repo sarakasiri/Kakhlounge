@@ -1,57 +1,57 @@
 .proSidebar {
-    position: fixed !important;
-    max-height: 100% !important;
-    top: 0;
+  position: fixed !important;
+  max-height: 100% !important;
+  top: 0;
 }
 
 .categoryBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // background-image: url("../../../assets/category_box.png");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
-    border: 1.5px solid #BE9649;
-    padding: 3px 0px !important;
-    margin: .5rem 5px !important;
-    border-radius: 1rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-image: url("../../../assets/category_box.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
+  border: 1.5px solid #be9649;
+  padding: 3px 0px !important;
+  margin: 0.5rem 5px !important;
+  border-radius: 1rem !important;
 
-    img{
-        width: 55px !important;
-        height: 55px !important;
-    }
+  img {
+    width: 55px !important;
+    height: 55px !important;
+  }
 }
 
 .sidebar {
-    margin-right: 0 !important;
-    overflow-y: scroll;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
+  margin-right: 0 !important;
+  overflow-y: scroll;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 
 .sidebar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .categoriesName {
-    font-family: IRANSans_Normal;
-    // font-family: 'Scheherazade', serif !important;
-    font-size: 0.8rem !important;
-    font-weight: 600 !important;
-    padding-right: 0.3rem !important;
-    margin-top: 0.4rem !important;
+  font-family: IRANSans_Normal;
+  // font-family: 'Scheherazade', serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  padding-right: 0.3rem !important;
+  margin-top: 0.4rem !important;
 }
 
 .currencyCategorySelected {
-    img {
-        transform: scale(1.25);
-        transition: transform 0.1s;
-    }
-    p {
-        transform: scale(1.25);
-        transition: transform 0.1s;
-        color: #FACF69;
-    }
+  img {
+    transform: scale(1.25);
+    transition: transform 0.1s;
+  }
+  p {
+    transform: scale(1.25);
+    transition: transform 0.1s;
+    color: #facf69;
+  }
 }
